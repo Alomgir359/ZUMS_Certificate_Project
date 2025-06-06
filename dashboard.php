@@ -23,9 +23,8 @@ $user = $_SESSION['user'];   // logged-in user
 
     <ul class="flex flex-col gap-4 flex-grow">
         <?php if ($user['role'] == 'admin'): ?>
-            <li><a href="dashboard.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ Create User</a></li>
-            <li><a href="dashboard.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ Update User</a></li>
-            <li><a href="dashboard.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ Delete User</a></li>
+            <li><a href="./Admin/createUser.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ Create User</a></li>
+            <li><a href="./Admin/allUser.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ All Users</a></li>
         <?php endif; ?>
         <li><a href="insert_student.php" class="block px-4 py-3 rounded-xl text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 transition">➤ Insert Student Info</a></li>
     </ul>
